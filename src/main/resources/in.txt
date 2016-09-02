@@ -1,0 +1,8 @@
+id,first_name,last_name,birthday,sex,address,color
+1958,Charles,deGaulle,20.07.1812,M,Boston MA,white
+1969,Georges,Pompidou,03.09.1817,M,NewYork NY,white
+1974,Valery,d'Estaing,30.03.1830,F,NewYork NY,black
+1981,Francois,Mitterrand,19.05.1829,M,SanFrancisco CA,white
+1995,Jacques,Chirac,12.12.1837,M,Miami FL,black
+2007,Nicolas,Sarkozy,05.09.1863,F,Hampton NH,white
+2012,Francois,Hollande,09.04.1901,M,Chicago IL,black

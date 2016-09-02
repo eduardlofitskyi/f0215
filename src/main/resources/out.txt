@@ -1,0 +1,8 @@
+first_name	last_name	address	birthday	sex
+Charles	deGaulle	Boston MA	20.07.1812	M
+Georges	Pompidou	NewYork NY	03.09.1817	M
+Valery	d'Estaing	NewYork NY	30.03.1830	F
+Francois	Mitterrand	SanFrancisco CA	19.05.1829	M
+Jacques	Chirac	Miami FL	12.12.1837	M
+Nicolas	Sarkozy	Hampton NH	05.09.1863	F
+Francois	Hollande	Chicago IL	09.04.1901	M

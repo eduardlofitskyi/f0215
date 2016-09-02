@@ -1,0 +1,52 @@
+group 'com.lofitskyi'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+repositories {
+    maven { url 'http://artifactory.truven.com:8070/repo/' }
+    maven { url 'http://conjars.org/repo' }
+    mavenCentral()
+}
+
+ext.cascadingVersion = '3.1.0'
+ext.hadoopVersion = '2.7.2'
+ext.cascadingHadoopVersion = '2.5.4'
+ext.cascadingAvroVersion = '2.5.0'
+ext.mpiVersion = '2.03'
+ext.cprVersion = '2.04'
+ext.mprVersion = '2.04'
+ext.extension = 'jar'
+
+dependencies {
+    compile(
+            [group: 'cascading', name: 'cascading-core', version: cascadingVersion],
+            [group: 'cascading', name: 'cascading-hadoop', version: cascadingVersion],
+            [group: 'cascading', name: 'cascading-local', version:  cascadingVersion],
+            [group: 'cascading', name: 'cascading-expression', version:  cascadingVersion],
+            [group: 'cascading', name: 'cascading-hadoop2-mr1', version:  cascadingHadoopVersion]
+    )
+
+    compile(
+            [group: 'org.apache.hadoop', name: 'hadoop-client', version: hadoopVersion],
+            [group: 'org.apache.hadoop', name: 'hadoop-common', version: hadoopVersion]
+    )
+
+    compile(
+            [group: 'cascading.avro', name: 'avro-scheme', version: cascadingAvroVersion]
+    )
+
+    compile(
+            [group: 'com.truven.dataforge.dataforge-avro-schemas', name: 'masterpatientindex', version: mpiVersion, ext: extension],
+            [group: 'com.truven.dataforge.dataforge-avro-schemas', name: 'masterpatientrecord', version: mprVersion, ext: extension],
+    )
+
+    compile 'org.apache.commons:commons-csv:1.4'
+    compile 'org.codehaus.groovy:groovy-all:2.4.7'
+
+    compile group: 'junit', name: 'junit', version: '4.+'
+
+}
